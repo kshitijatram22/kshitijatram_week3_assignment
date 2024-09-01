@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">FlipoZon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cart-count">Cart</a>
+            </li>
+
+            
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slide 1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide 2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide 3.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- First Row -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-4 text-center mb-4">
+          <img src="./images/induction.webp" alt="Image 1" />
+          <p>Induction</p>
+          <p>Rs. 2999.00</p>
+          <button class="add-to-cart btn btn-primary">Add to Cart</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-4 text-center mb-4">
+          <img src="./images/chair.webp" alt="Image 2" />
+          <p>Chair</p>
+          <p>Rs. 2499.00</p>
+          <button class="add-to-cart btn btn-primary">Add to Cart</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-4 text-center mb-4">
+          <img src="./images/keyboard.jpg" alt="Image 3" />
+          <p>Gaming Keyboard</p>
+          <p>Rs. 1999.00</p>
+          <button class="add-to-cart btn btn-primary">Add to Cart</button>
+        </div>
+
+        <!-- Second Row -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-4 text-center mb-4">
+          <img src="./images/phone.jpg" alt="Image 4" />
+          <p>Smart phone</p>
+          <p>Rs. 14999.00</p>
+          <button class="add-to-cart btn btn-primary">Add to Cart</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-4 text-center mb-4">
+          <img src="./images/Table.jpg" alt="Image 5" />
+          <p>Table</p>
+          <p>Rs. 1200.00</p>
+          <button class="add-to-cart btn btn-primary">Add to Cart</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-4 text-center mb-4">
+          <img src="./images/TV.jpg" alt="Image 6" />
+          <p>Smart tv</p>
+          <p>Rs. 14500.00</p>
+          <button class="add-to-cart btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="cart">
+    <div id="cart-count">Cart: 0 items</div>
+    <button class="btn btn-success">Buy Now!</button>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
